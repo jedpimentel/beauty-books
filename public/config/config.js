@@ -19,7 +19,10 @@
              i.e. when on website.com/ the webpage shows the html in
              */
             .when("/", {
-                templateUrl: "views/view-one.html"
+                templateUrl: "views/login/login.html"
+            })
+            .when("/home", {
+                templateUrl: "views/home/home.html"
             })
             .when("/view-one", {
                 templateUrl: "views/view-one.html"
