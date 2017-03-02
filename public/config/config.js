@@ -3,7 +3,7 @@
  */
 (function () {
     angular
-        .module("SimpleApp")
+        .module("BeautyBooks")
         .config(configuration);
     /**
      * Configures the routes for the Single Page Application connecting controllers to views
@@ -23,6 +23,36 @@
             })
             .when("/home", {
                 templateUrl: "views/home/home-ytd.html"
+            })
+            .when("/home/ytd", {
+                templateUrl: "views/home/home-ytd.html"
+            })
+            .when("/home/week", {
+                templateUrl: "views/home/home-week.html"
+            })
+            .when("/home/month", {
+                templateUrl: "views/home/home-month.html"
+            })
+            .when("/home/year", {
+                templateUrl: "views/home/home-year.html"
+            })
+            // Scheduler Routes
+            .when("/scheduler", {
+                templateUrl: "views/scheduler/scheduler.html"
+            })
+            // Expenses Routes
+            .when("/expenses", {
+                templateUrl: "views/expenses/expenses-added.html"
+            })
+            .when("/expenses/added", {
+                templateUrl: "views/expenses/expenses-added.html"
+            })
+            .when("/expenses/reviewed", {
+                templateUrl: "views/expenses/expenses-reviewed.html"
+            })
+            // Taxes Routes
+            .when("/taxes", {
+                templateUrl: "views/taxes/taxes.html"
             })
             .when("/view-one", {
                 templateUrl: "views/view-one.html"

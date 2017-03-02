@@ -13,7 +13,7 @@ body {
 
 h1 {
     font-family: "Oswald", "Roboto", sans-serif;
-    font-size: 2em;
+    font-size: 2.25em;
 }
 
 h2 {
@@ -23,26 +23,26 @@ h2 {
 
 h3 {
     font-family: "Oswald", "Roboto", sans-serif;
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 h4 {
     font-family: "Oswald", "Roboto", sans-serif;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 h5 {
     font-family: "Oswald", "Roboto", sans-serif;
-    font-size: 2em;
+    font-size: 1.25em;
 }
 
 h6 {
     font-family: "Oswald", "Roboto", sans-serif;
-    font-size: 2em;
+    font-size: 1.15em;
 }
 
 p {
-
+    font-size: 1em;
 }
 
 a {
@@ -89,6 +89,10 @@ header {
 
 }
 
+/********************************************************************
+TABS STYLES
+ *******************************************************************/
+
 footer {
     position: fixed;
     bottom: 0;
@@ -103,7 +107,6 @@ footer {
 footer nav {
     display: inline-block;
     width: 50%;
-    min-width: 580px;
     text-align: center;
 }
 
@@ -111,14 +114,14 @@ footer nav a {
     display: inline-block;
     vertical-align: middle;
     width: 15%;
-    min-width: 100px;
-    padding: 5px 0;
+    padding: 5px 10px;
     color: #fff;
 }
 
 footer nav a:hover {
     background-color: #fff;
     color: #333;
+    text-decoration: none;
 }
 
 footer nav a span {
@@ -127,4 +130,37 @@ footer nav a span {
 
 footer nav a span, footer nav a small {
     display: block;
+}
+
+
+/********************************************************************
+RESPONSIVE STYLES
+ *******************************************************************/
+
+@media (max-width: 1024px) and (orientation: landscape) {
+
+}
+
+@media (max-width: 1024px) and (orientation: portrait) {
+
+}
+
+@media (max-width: 767px) and (orientation: landscape) {
+    footer nav {
+        width: 100%;
+    }
+
+    footer nav a {
+        width: 24%;
+    }
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
+    footer nav {
+        width: 100%;
+    }
+
+    footer nav a {
+        width: 24%;
+    }
 }

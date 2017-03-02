@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="SimpleApp">
+<html lang="en" ng-app="BeautyBooks">
 <head>
     <meta charset="UTF-8">
-    <title>Simple App Starter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Beauty Books</title>
     <!-- Load Custom CSS Styles -->
     <link href="css/styles.css" rel="stylesheet"/>
+    <!-- Load Normalize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet"/>
     <!-- Load Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Load JQuery for Bootstrap -->
@@ -25,7 +28,7 @@
     <script type="text/javascript" src="config/config.js"></script>
 </head>
 <body>
-    <div data-ng-view></div>
+    <div ng-view></div>
     <ng-include src="'tabs.html'"></ng-include>
 </body>
 </html>

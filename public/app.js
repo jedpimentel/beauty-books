@@ -3,5 +3,5 @@
  */
 
 (function () {
-    angular.module("SimpleApp", ["ngRoute"]);
+    angular.module("BeautyBooks", ["ngRoute"]);
 })();
