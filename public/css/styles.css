@@ -50,19 +50,19 @@ a {
 }
 
 a:hover {
-
+    cursor: pointer;
 }
 
 a:focus {
-
+    color: inherit;
 }
 
 a:active {
-
+    color: inherit;
 }
 
 a:visited {
-
+    color: inherit;
 }
 
 button {
@@ -90,5 +90,41 @@ header {
 }
 
 footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    float: left;
+    text-align: center;
+}
 
+footer nav {
+    display: inline-block;
+    width: 50%;
+    min-width: 580px;
+    text-align: center;
+}
+
+footer nav a {
+    display: inline-block;
+    vertical-align: middle;
+    width: 15%;
+    min-width: 100px;
+    padding: 5px 0;
+    color: #fff;
+}
+
+footer nav a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+footer nav a span {
+    font-size: 24px;
+}
+
+footer nav a span, footer nav a small {
+    display: block;
 }

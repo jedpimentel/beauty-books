@@ -22,7 +22,7 @@
                 templateUrl: "views/login/login.html"
             })
             .when("/home", {
-                templateUrl: "views/home/home.html"
+                templateUrl: "views/home/home-ytd.html"
             })
             .when("/view-one", {
                 templateUrl: "views/view-one.html"
