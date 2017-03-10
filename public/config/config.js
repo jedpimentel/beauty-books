@@ -19,12 +19,15 @@
              i.e. when on website.com/ the webpage shows the html in
              */
             .when("/", {
-                templateUrl: "views/login/login.html"
+                templateUrl: "views/login/login.html",
+                controller: "LoginController",
+                controllerAs: "model"
             })
+            // Home Routes
             .when("/home", {
                 templateUrl: "views/home/home-ytd.html"
             })
-            .when("/home/ytd", {
+            .when("/home/year", {
                 templateUrl: "views/home/home-ytd.html"
             })
             .when("/home/week", {
@@ -33,32 +36,35 @@
             .when("/home/month", {
                 templateUrl: "views/home/home-month.html"
             })
-            .when("/home/year", {
-                templateUrl: "views/home/home-year.html"
-            })
+
             // Scheduler Routes
             .when("/scheduler", {
                 templateUrl: "views/scheduler/scheduler.html"
             })
+
+            // Transactions Routes
+            .when("/transactions", {
+                templateUrl: "views/transactions/transactions-added.html"
+            })
+            .when("/transactions/added", {
+                templateUrl: "views/transactions/transactions-added.html",
+                controller: "TransactionsAddedController",
+                controllerAs: "model"
+            })
+            .when("/transactions/reviewed", {
+                templateUrl: "views/transactions/transactions-reviewed.html",
+                controller: "TransactionsReviewedController",
+                controllerAs: "model"
+            })
             // Expenses Routes
             .when("/expenses", {
-                templateUrl: "views/expenses/expenses-added.html"
+                templateUrl: "views/expenses/expenses-quarterly-spending.html"
             })
-            .when("/expenses/added", {
-                templateUrl: "views/expenses/expenses-added.html"
+            .when("/expenses/quarterly", {
+                templateUrl: "views/expenses/expenses-quarterly-spending.html"
             })
-            .when("/expenses/reviewed", {
-                templateUrl: "views/expenses/expenses-reviewed.html"
-            })
-            // Taxes Routes
-            .when("/taxes", {
-                templateUrl: "views/taxes/taxes.html"
-            })
-            .when("/view-one", {
-                templateUrl: "views/view-one.html"
-            })
-            .when("/view-two", {
-                templateUrl: "views/view-two.html"
+            .when("/expenses/annual", {
+                templateUrl: "views/expenses/expenses-annual-spending.html"
             })
             .otherwise({
                 redirectTo: "/"

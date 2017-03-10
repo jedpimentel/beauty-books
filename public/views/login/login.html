@@ -1,1 +1,24 @@
-<a href="#/home"><button type="button" name="button">LOGIN</button></a>
+<section class="container flex-center-stacked">
+    <div>
+        <a ng-click="model.login($event)" id="login-facebook">
+            <button type="button" name="button">LOGIN WITH FACEBOOK</button>
+        </a>
+
+        <a ng-click="model.login($event)" id="login-google">
+            <button type="button" name="button">LOGIN WITH GOOGLE</button>
+        </a>
+
+        <a ng-click="model.learnMore()" id="learn-more" class="center-text">
+            Learn More
+        </a>
+    </div>
+
+    <div class="drawer" id="about">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi repudiandae inventore,
+            vel nostrum. Ut quasi doloribus praesentium quisquam voluptates tenetur necessitatibus
+            possimus molestiae delectus dicta, provident recusandae maiores tempore adipisci.
+        </p>
+    </div>
+</section>
+

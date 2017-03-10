@@ -42,11 +42,13 @@ h6 {
 }
 
 p {
+    font-family: "Oswald", "Roboto", sans-serif;
     font-size: 1em;
 }
 
 a {
-
+    font-family: "Oswald", "Roboto", sans-serif;
+    text-decoration: none;
 }
 
 a:hover {
@@ -66,7 +68,19 @@ a:visited {
 }
 
 button {
+    display: block;
+    margin: 10px auto;
+    min-width: 240px;
+    height: 38px;
+    border-radius: 4px;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #333;
+    cursor: pointer;
+}
 
+.button:hover {
 }
 
 ul, ol {
@@ -86,8 +100,77 @@ li {
 }
 
 header {
-
+    width: 100%;
+    background: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
 }
+
+header nav {
+    text-align: center;
+    height: inherit;
+}
+
+header nav img {
+    height: 100%;
+    width: auto;
+}
+
+.container {
+    padding: 60px 5px;
+}
+
+section.container {
+    margin: 10px auto;
+    max-width: 400px;
+    height: 100vh;
+}
+
+.drawer {
+    height: 50%;
+    width: 100%;
+    position: fixed;
+    max-width: 400px;
+    background-color: rgba(44,44,44,.5);
+    transition-duration: 500s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition: transform 500ms;
+    transform: translateY(150%);
+}
+
+.drawer p {
+    padding: 10px;
+}
+
+/********************************************************************
+HELPER STYLES
+ *******************************************************************/
+
+.flex-center-stacked {
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    align-self: center;
+    -webkit-align-self: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    flex-flow: column wrap;
+    -webkit-flex-flow: column wrap;
+}
+
+.center-text {
+    text-align: center;
+    width: 100%;
+    float: left;
+}
+
 
 /********************************************************************
 TABS STYLES
@@ -116,6 +199,7 @@ footer nav a {
     width: 15%;
     padding: 5px 10px;
     color: #fff;
+    text-decoration: none;
 }
 
 footer nav a:hover {
@@ -124,11 +208,13 @@ footer nav a:hover {
     text-decoration: none;
 }
 
-footer nav a span {
+footer nav a .fa {
     font-size: 24px;
+    text-decoration: none;
+    margin: 4px auto;
 }
 
-footer nav a span, footer nav a small {
+footer nav a .fa, footer nav a small {
     display: block;
 }
 
@@ -148,19 +234,23 @@ RESPONSIVE STYLES
 @media (max-width: 767px) and (orientation: landscape) {
     footer nav {
         width: 100%;
+        display: inline-table;
     }
 
     footer nav a {
-        width: 24%;
+        width: 25%;
+        padding: 5px 0;
     }
 }
 
 @media (max-width: 767px) and (orientation: portrait) {
     footer nav {
         width: 100%;
+        display: inline-table;
     }
 
     footer nav a {
-        width: 24%;
+        width: 25%;
+        padding: 5px 0;
     }
 }
