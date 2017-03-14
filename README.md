@@ -11,3 +11,12 @@
 
 ## Routes 
 The routes for the screen to screen navigation can be found in the config.js. When adding html screen, be sure to add to the configuration function within this config.js file.
+
+## Views
+The views, which are html snippets for this single page application, are found in the public/views directory
+
+## Components
+...
+
+## Controllers
+The logic to initialize the state for the current page and to define the behavior on the page objects. Do not use the controller to manipulate the DOM (use directives) or to share code / state across controllers 
