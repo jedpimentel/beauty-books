@@ -1,3 +1,26 @@
+/*
+Author: Resilient Coders
+Author URI: http://www.resilientcoders.org/
+Description: Single Page Web Application for BeautyBooks
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Elements
+# Typography
+# Layout
+# Tabs Navigation
+# Accessibility
+# Responsive
+
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------------
+# ELEMENTS
+--------------------------------------------------------------------*/
 * {
 
 }
@@ -10,6 +33,35 @@ body, html {
 body {
     font-size: 16px;
 }
+
+button {
+    display: block;
+    margin: 10px auto;
+    min-width: 240px;
+    height: 38px;
+    border-radius: 4px;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #333;
+    cursor: pointer;
+}
+
+.button:hover {
+
+}
+
+ul, ol {
+
+}
+
+li {
+
+}
+
+/*--------------------------------------------------------------------
+# TYPOGRAPHY
+--------------------------------------------------------------------*/
 
 h1 {
     font-family: "Oswald", "Roboto", sans-serif;
@@ -67,39 +119,6 @@ a:visited {
     color: inherit;
 }
 
-button {
-    display: block;
-    margin: 10px auto;
-    min-width: 240px;
-    height: 38px;
-    border-radius: 4px;
-    border: none;
-    padding: 10px 20px;
-    color: #fff;
-    background-color: #333;
-    cursor: pointer;
-}
-
-.button:hover {
-
-}
-
-ul, ol {
-
-}
-
-li {
-
-}
-
-.card {
-
-}
-
-.wrapper {
-
-}
-
 header {
     width: 100%;
     background: #333;
@@ -129,6 +148,15 @@ section.container {
     height: 100vh;
 }
 
+
+.card {
+
+}
+
+.wrapper {
+
+}
+
 .drawer {
     height: 50%;
     width: 100%;
@@ -146,9 +174,9 @@ section.container {
     padding: 10px;
 }
 
-/********************************************************************
-HELPER STYLES
- *******************************************************************/
+/*--------------------------------------------------------------------
+# LAYOUT
+---------------------------------------------------------------------*/
 
 .flex-center-stacked {
     display: flex;
@@ -173,9 +201,9 @@ HELPER STYLES
 }
 
 
-/********************************************************************
-TABS STYLES
- *******************************************************************/
+/*--------------------------------------------------------------------
+# TABS NAVIGATION
+--------------------------------------------------------------------*/
 
 footer {
     position: fixed;
@@ -218,10 +246,13 @@ footer nav a .fa, footer nav a small {
     display: block;
 }
 
+/*--------------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------------*/
 
-/********************************************************************
-RESPONSIVE STYLES
- *******************************************************************/
+/*--------------------------------------------------------------------
+# RESPONSIVE
+--------------------------------------------------------------------*/
 
 @media (max-width: 1024px) and (orientation: landscape) {
 
