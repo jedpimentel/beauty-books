@@ -81,6 +81,7 @@ button {
 }
 
 .button:hover {
+
 }
 
 ul, ol {
@@ -202,9 +203,8 @@ footer nav a {
     text-decoration: none;
 }
 
-footer nav a:hover {
-    background-color: #fff;
-    color: #333;
+footer nav a:hover, footer nav a.current-tab {
+    color: darkred;
     text-decoration: none;
 }
 

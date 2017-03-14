@@ -4,12 +4,19 @@
 (function () {
     angular
         .module("BeautyBooks")
-        .config(configuration);
+        .config(Configuration);
+
+    // function setTab() {
+    //     switch ($location.path()) {
+    //         case '/home':
+    //
+    //     }
+    // }
     /**
      * Configures the routes for the Single Page Application connecting controllers to views
      * @param $routeProvider
      */
-    function configuration($routeProvider) {
+    function Configuration($routeProvider) {
         // Define your routes here. Each "view" will have a route path
         // associated with it. Also, you will include a Controller for
         // each view to manipulate binded data
@@ -36,12 +43,10 @@
             .when("/home/month", {
                 templateUrl: "views/home/home-month.html"
             })
-
             // Scheduler Routes
             .when("/scheduler", {
                 templateUrl: "views/scheduler/scheduler.html"
             })
-
             // Transactions Routes
             .when("/transactions", {
                 templateUrl: "views/transactions/transactions-added.html"
@@ -65,6 +70,10 @@
             })
             .when("/expenses/annual", {
                 templateUrl: "views/expenses/expenses-annual-spending.html"
+            })
+            // Settings Routes
+            .when("/settings", {
+                templateUrl: "views/settings/settings.html"
             })
             .otherwise({
                 redirectTo: "/"
