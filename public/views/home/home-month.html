@@ -1,44 +1,44 @@
 <div class="container">
-    <h1>Month</h1>
+    <h1>month</h1>
+<!---
     <p>Within this container will go the ng-include
         / ng-switch / ng-switch when code for the four different screens
     </p>
+------>
     <a href="#/home/week">Week</a>
     <a href="#/home/month">Month</a>
     <a href="#/home">YTD</a>
 
-    <div class="Month-arrowup">
-        <ol id="Month-money-arrowup">$7,863</ol>
-    </div>
-    <div class="Month-money-arrowdown">
-        <ol id="Month-money-arrowdown">$2,991</ol>
+    <div class="month-arrows">
+      <nav>
+        <a href>
+          <i class="fa fa-sort-asc" aria-hidden="true"></i>
+        </a>
+      </nav>
+      <small id="month-arrowup">$5,883</small>
+      <nav>
+        <a href>
+          <i class="fa fa-sort-desc" aria-hidden="true"></i>
+        </a>
+      </nav>
+      <small id="month-arrowdown">$4,391</small>
     </div>
 
-    <div class="Month-total">
-        <h3 id="Month-total-money">$4,092
-        </h3>
+    <div class="month-total">
+      <h3>$1,092</h3>
     </div>
 
-    <div class="Month-graph-data">
+    <div class="month-graph"></div>
+
+    <div class="month-deductions">
+      <h2>Deductions</h2>
+      <h3>$0</h3>
+      <small>0 Deductions</small>
     </div>
 
-    <div class="Month-deductions-total">
-        <h2>
-            Deductions
-        </h2>
-        <ol id="Month-deductions-total-money">$100</ol>
-    </div>
-        <small id="Month-deduction-number">
-            100 Deductions
-        </small>
-
-    <div class="Month-next-tax-payment">
-        <h2>
-            Next Tax Payment
-        </h2>
-        <ol id="Month-tax-amount">$978</ol>
-        <small id="Month-due-date">
-            Due September 4, 2017
-        </small>
+    <div class="month-tax-payment">
+      <h2>Next Tax Payment</h2>
+      <h3>$678</h3>
+      <small>Due September 19, 2017</small>
     </div>
 </div>
