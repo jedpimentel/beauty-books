@@ -9,18 +9,7 @@
     <!-- Load Font Awesome -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <!-- Load Normalize CSS -->
-    <!--<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet"/>-->
-    <!-- Load Bootstrap CSS -->
-    <!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />-->
-    <!-- Load JQuery for Bootstrap -->
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
-    <!-- Load Bootstrap JS -->
-    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
-    <!-- Load JQuery UI CSS -->
-    <!--<link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet" />-->
-    <!-- Load JQuery UI JS-->
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" rel="stylesheet"></script>-->
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet"/>
     <!-- Load Angular.js Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
     <!-- Load Angular js Routes -->
@@ -33,11 +22,13 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.4.3/velocity.min.js"></script>
     <!-- Load Velocity JS UI -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.4.3/velocity.ui.min.js"></script>
-
     <!-- Controllers -->
-    <script type="text/javascript" src="./views/login/LoginController.js"></script>
-    <script type="text/javascript" src="views/transactions/TransactionsController.js"></script>
-
+    <script type="text/javascript" src="controllers/LoginController.js"></script>
+    <script type="text/javascript" src="controllers/ExpensesController.js"></script>
+    <script type="text/javascript" src="controllers/HomeController.js"></script>
+    <script type="text/javascript" src="controllers/SchedulerController.js"></script>
+    <script type="text/javascript" src="controllers/SettingsController.js"></script>
+    <script type="text/javascript" src="controllers/TransactionsController.js"></script>
 </head>
 <body>
     <ng-include src="'./views/components/header.html'"></ng-include>
