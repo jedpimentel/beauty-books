@@ -1,0 +1,19 @@
+.container.home{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.container.home .wmy-tabs{
+  height: 110px;
+}
+.container.home .wmy-tabs button{
+  width: 33.3%;
+  float: left;
+  background-color: gray;
+  border-radius: 0px;
+  font-size: 50px;
+  padding: 20px 0px 65px;
+}
+.container.home .arrows{
+  width: 5%;
+  float: left;
+}
