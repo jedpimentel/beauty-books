@@ -6,178 +6,188 @@ Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 */
-
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-# Elements
-# Typography
-# Layout
-# Tabs Navigation
-# Accessibility
-# Responsive
-
+# GENERAL
+    ## EVENTS
+    ## HEADER
+# TYPOGRAPHY
+# COMPONENTS
+# HELPER
+# NAVIGATION
+    ## Tabs Navigation
+# ACCESSIBILITY
+# RESPONSIVE
+    ## RESPONSIVE TABLET LANDSCAPE
+    ## RESPONSIVE TABLET PORTRAIT
+    ## RESPONSIVE MOBILE LANDSCAPE
+    ## RESPONSIVE MOBILE PORTRAIT
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------------
-# ELEMENTS
+# GENERAL
 --------------------------------------------------------------------*/
 * {
 
 }
-
 body, html {
     margin: 0;
     padding: 0;
 }
-
 body {
     font-size: 16px;
 }
-
 button {
+    background-color: #333;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
     display: block;
+    height: 38px;
     margin: 10px auto;
     min-width: 240px;
-    height: 38px;
-    border-radius: 4px;
-    border: none;
     padding: 10px 20px;
-    color: #fff;
-    background-color: #333;
-    cursor: pointer;
 }
-
-.button:hover {
-
-}
-
-ul, ol {
-
-}
-
-li {
-
-}
-
 /*--------------------------------------------------------------------
-# TYPOGRAPHY
+## EVENTS
 --------------------------------------------------------------------*/
-
-h1 {
-    font-family: "Oswald", "Roboto", sans-serif;
-    font-size: 2.25em;
-}
-
-h2 {
-    font-family: "Oswald", "Roboto", sans-serif;
-    font-size: 2em;
-}
-
-h3 {
-    font-family: "Oswald", "Roboto", sans-serif;
-    font-size: 1.8em;
-}
-
-h4 {
-    font-family: "Oswald", "Roboto", sans-serif;
-    font-size: 1.5em;
-}
-
-h5 {
-    font-family: "Oswald", "Roboto", sans-serif;
-    font-size: 1.25em;
-}
-
-h6 {
-    font-family: "Oswald", "Roboto", sans-serif;
-    font-size: 1.15em;
-}
-
-p {
-    font-family: "Oswald", "Roboto", sans-serif;
-    font-size: 1em;
-}
-
-a {
-    font-family: "Oswald", "Roboto", sans-serif;
-    text-decoration: none;
-}
-
 a:hover {
     cursor: pointer;
 }
-
 a:focus {
     color: inherit;
 }
-
 a:active {
     color: inherit;
 }
-
 a:visited {
     color: inherit;
 }
+button:active {
 
+}
+button:focus {
+
+}
+button:hover{
+
+}
+.button:hover {
+
+}
+/*--------------------------------------------------------------------
+## HEADER
+--------------------------------------------------------------------*/
 header {
-    width: 100%;
     background: #333;
+    height: 60px;
+    left: 0;
     position: fixed;
     top: 0;
-    left: 0;
-    height: 60px;
+    width: 100%;
 }
-
 header nav {
-    text-align: center;
     height: inherit;
+    text-align: center;
 }
-
 header nav img {
     height: 100%;
     width: auto;
 }
-
-.container {
-    padding: 60px 5px;
+/*--------------------------------------------------------------------
+# TYPOGRAPHY
+--------------------------------------------------------------------*/
+a {
+    font-family: "Oswald", "Roboto", sans-serif;
+    text-decoration: none;
 }
+blockquote {
 
-section.container {
-    margin: 10px auto;
-    max-width: 400px;
-    height: 100vh;
 }
+h1 {
+    font-family: "Oswald", "Roboto", sans-serif;
+    font-size: 2.25em;
+}
+h2 {
+    font-family: "Oswald", "Roboto", sans-serif;
+    font-size: 2em;
+}
+h3 {
+    font-family: "Oswald", "Roboto", sans-serif;
+    font-size: 1.8em;
+}
+h4 {
+    font-family: "Oswald", "Roboto", sans-serif;
+    font-size: 1.5em;
+}
+h5 {
+    font-family: "Oswald", "Roboto", sans-serif;
+    font-size: 1.25em;
+}
+h6 {
+    font-family: "Oswald", "Roboto", sans-serif;
+    font-size: 1.15em;
+}
+p {
+    font-family: "Oswald", "Roboto", sans-serif;
+    font-size: 1em;
+}
+small {
 
+}
+ul, ol {
 
+}
+ul li, ol li {
+
+}
+/*--------------------------------------------------------------------
+# COMPONENTS
+--------------------------------------------------------------------*/
 .card {
 
 }
-
-.wrapper {
-
+.container {
+    padding: 60px 5px;
 }
-
-.drawer {
-    height: 50%;
-    width: 100%;
-    position: fixed;
+section.container {
+    height: 100vh;
+    margin: 10px auto;
     max-width: 400px;
+}
+.drawer {
     background-color: rgba(44,44,44,.5);
+    height: 50%;
+    max-width: 400px;
+    position: fixed;
+    transform: translateY(150%);
+    transition: transform 500ms;
     transition-duration: 500s;
     transition-property: all;
     transition-timing-function: ease-in-out;
-    transition: transform 500ms;
-    transform: translateY(150%);
+    width: 100%;
 }
-
 .drawer p {
     padding: 10px;
 }
+.hero {
 
+}
+.row {
+
+}
+.wrapper {
+
+}
 /*--------------------------------------------------------------------
-# LAYOUT
+# HELPER
 ---------------------------------------------------------------------*/
-
+.center-text {
+    text-align: center;
+    width: 100%;
+    float: left;
+}
 .flex-center-stacked {
     display: flex;
     display: -webkit-box;
@@ -193,95 +203,88 @@ section.container {
     flex-flow: column wrap;
     -webkit-flex-flow: column wrap;
 }
-
-.center-text {
-    text-align: center;
-    width: 100%;
-    float: left;
-}
-
-
 /*--------------------------------------------------------------------
-# TABS NAVIGATION
+# NAVIGATION
 --------------------------------------------------------------------*/
-
+/*--------------------------------------------------------------------
+## TABS NAVIGATION
+--------------------------------------------------------------------*/
 footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
     background-color: #333;
+    bottom: 0;
     color: #fff;
-    width: 100%;
     float: left;
+    left: 0;
+    position: fixed;
     text-align: center;
+    width: 100%;
 }
-
 footer nav {
     display: inline-block;
-    width: 50%;
     text-align: center;
+    width: 50%;
 }
-
 footer nav a {
+    color: #fff;
     display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
     vertical-align: middle;
     width: 15%;
-    padding: 5px 10px;
-    color: #fff;
-    text-decoration: none;
 }
-
 footer nav a:hover, footer nav a.current-tab {
     color: darkred;
     text-decoration: none;
 }
-
 footer nav a .fa {
     font-size: 24px;
-    text-decoration: none;
     margin: 4px auto;
+    text-decoration: none;
 }
-
 footer nav a .fa, footer nav a small {
     display: block;
 }
-
 /*--------------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------------*/
-
 /*--------------------------------------------------------------------
 # RESPONSIVE
 --------------------------------------------------------------------*/
-
+/*--------------------------------------------------------------------
+## RESPONSIVE TABLET LANDSCAPE
+--------------------------------------------------------------------*/
 @media (max-width: 1024px) and (orientation: landscape) {
 
 }
-
+/*--------------------------------------------------------------------
+## RESPONSIVE TABLET PORTRAIT
+--------------------------------------------------------------------*/
 @media (max-width: 1024px) and (orientation: portrait) {
 
 }
-
-@media (max-width: 767px) and (orientation: landscape) {
+/*--------------------------------------------------------------------
+## RESPONSIVE MOBILE LANDSCAPE
+--------------------------------------------------------------------*/
+@media (max-width: 768px) and (orientation: landscape) {
     footer nav {
-        width: 100%;
         display: inline-table;
+        width: 100%;
     }
-
     footer nav a {
-        width: 25%;
         padding: 5px 0;
+        width: 25%;
     }
 }
-
-@media (max-width: 767px) and (orientation: portrait) {
+/*--------------------------------------------------------------------
+## RESPONSIVE MOBILE PORTRAIT
+--------------------------------------------------------------------*/
+@media (max-width: 768px) and (orientation: portrait) {
     footer nav {
-        width: 100%;
         display: inline-table;
+        width: 100%;
     }
-
     footer nav a {
-        width: 25%;
         padding: 5px 0;
+        width: 25%;
     }
 }
