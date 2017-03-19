@@ -23,9 +23,9 @@ The views, which are html snippets for this single page application, are found i
 The logic to initialize the state for the current page and to define the behavior on the page objects. Do not use the controller to manipulate the DOM (use directives) or to share code / state across controllers 
 
 ## Services
-UserService
-AppointmentService
-ExpenseService
+- UserService
+- AppointmentService
+- ExpenseService
 
 ## Database Schema 
 ``` javascript
