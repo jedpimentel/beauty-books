@@ -1,53 +1,82 @@
 /* CSS styles for scheduler.html */
 .container.scheduler {
-  margin: 10px auto;
-  max-width: 400px;
-}
-.container.scheduler h1 {
-  text-align: center;
-  background-color: gray;
-  color: white;
-}
-.container.scheduler ul {
-  padding: 0;
-}
-.container.scheduler li {
-  list-style: none;
+  margin: 15px auto;
 }
 .container.scheduler .calendar {
-  /*placeholer*/
-  background-color: gray;
-  height: 15em;
+  background-color: #333;
+  height: 300px;
+  margin: 0 15px;
   text-align: center;
 }
-.container.scheduler button {
-  border: 1px solid gray;
-  color: gray;
-  background-color: inherit;
-  /* (0.50em*+1.2em)*3 about same height as appointment entry*/
-  height: 5.1em !important;
-  /* same width as ".line-subject" width plus padding*/
-  min-width: 4.5em !important;
+.container.scheduler h1 {
+  background-color: #333;
+  color: #fff;
+  line-height: 1.5;
+  text-align: center;
+}
+.container.scheduler ul {
+  list-style: none;
   padding: 0;
+}
+.container.scheduler ul li {
+
+}
+.container.scheduler button {
+  background-color: inherit;
+  border: 1px solid #333;
   border-radius: 0;
+  color: #333;
+  height: 90px;
+  margin: 0 15px;
+  min-width: 90px;
+  padding: 0;
+  text-align: center;
 }
 .container.scheduler .fa.fa-plus {
-  font-size: 3.5em;
+  font-size: 45px;
 }
-.container.scheduler .entry {
-  border: 1px solid black;
+.container.scheduler .appointment {
+  border: 1px solid #333;
+  border-radius: 4px;
+  margin: 0 15px;
 }
-.container.scheduler .line-subject{
-  background-color: gray;
-  color: white;
-  padding: 0.25em;
+.container.scheduler label {
+  background-color: #333;
+  color: #fff;
   display: inline-block;
-  min-width: 4em;
-  text-align: right;
+  min-width: 15%;
+  padding: 5px 15px;
+  text-align: left;
 }
+.container.scheduler span {
+  display: inline-block;
+  padding: 5px 15px;
+  text-align: left;
+}
+/*--------------------------------------------------------------------
+# RESPONSIVE
+--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------
+## RESPONSIVE TABLET LANDSCAPE
+--------------------------------------------------------------------*/
+@media (max-width: 1024px) and (orientation: landscape) {
 
-@media (max-width: 768px) {
-  .container.scheduler {
-    max-width: 100%;
-  }
+}
+/*--------------------------------------------------------------------
+## RESPONSIVE TABLET PORTRAIT
+--------------------------------------------------------------------*/
+@media (max-width: 1024px) and (orientation: portrait) {
+
+}
+/*--------------------------------------------------------------------
+## RESPONSIVE MOBILE LANDSCAPE
+--------------------------------------------------------------------*/
+@media (max-width: 768px) and (orientation: landscape) {
+
+}
+/*--------------------------------------------------------------------
+## RESPONSIVE MOBILE PORTRAIT
+--------------------------------------------------------------------*/
+@media (max-width: 768px) and (orientation: portrait) {
+
 }

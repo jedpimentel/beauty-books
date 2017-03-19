@@ -108,19 +108,19 @@ blockquote {
 }
 h1 {
     font-family: "Oswald", "Roboto", sans-serif;
-    font-size: 2.25em;
+    font-size: 2em;
 }
 h2 {
     font-family: "Oswald", "Roboto", sans-serif;
-    font-size: 2em;
+    font-size: 1.8em;
 }
 h3 {
     font-family: "Oswald", "Roboto", sans-serif;
-    font-size: 1.8em;
+    font-size: 1.6em;
 }
 h4 {
     font-family: "Oswald", "Roboto", sans-serif;
-    font-size: 1.5em;
+    font-size: 1.4em;
 }
 h5 {
     font-family: "Oswald", "Roboto", sans-serif;
@@ -150,7 +150,9 @@ ul li, ol li {
 
 }
 .container {
-    padding: 60px 5px;
+    max-width: 540px;
+    padding: 60px 0px;
+    width: 100%;
 }
 section.container {
     height: 100vh;
