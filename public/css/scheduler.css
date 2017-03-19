@@ -1,0 +1,82 @@
+/* CSS styles for scheduler.html */
+.container.scheduler {
+  margin: 15px auto;
+}
+.container.scheduler .calendar {
+  background-color: #333;
+  height: 300px;
+  margin: 0 15px;
+  text-align: center;
+}
+.container.scheduler h1 {
+  background-color: #333;
+  color: #fff;
+  line-height: 1.5;
+  text-align: center;
+}
+.container.scheduler ul {
+  list-style: none;
+  padding: 0;
+}
+.container.scheduler ul li {
+
+}
+.container.scheduler button {
+  background-color: inherit;
+  border: 1px solid #333;
+  border-radius: 0;
+  color: #333;
+  height: 90px;
+  margin: 0 15px;
+  min-width: 90px;
+  padding: 0;
+  text-align: center;
+}
+.container.scheduler .fa.fa-plus {
+  font-size: 45px;
+}
+.container.scheduler .appointment {
+  border: 1px solid #333;
+  border-radius: 4px;
+  margin: 0 15px;
+}
+.container.scheduler label {
+  background-color: #333;
+  color: #fff;
+  display: inline-block;
+  min-width: 15%;
+  padding: 5px 15px;
+  text-align: left;
+}
+.container.scheduler span {
+  display: inline-block;
+  padding: 5px 15px;
+  text-align: left;
+}
+/*--------------------------------------------------------------------
+# RESPONSIVE
+--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------
+## RESPONSIVE TABLET LANDSCAPE
+--------------------------------------------------------------------*/
+@media (max-width: 1024px) and (orientation: landscape) {
+
+}
+/*--------------------------------------------------------------------
+## RESPONSIVE TABLET PORTRAIT
+--------------------------------------------------------------------*/
+@media (max-width: 1024px) and (orientation: portrait) {
+
+}
+/*--------------------------------------------------------------------
+## RESPONSIVE MOBILE LANDSCAPE
+--------------------------------------------------------------------*/
+@media (max-width: 768px) and (orientation: landscape) {
+
+}
+/*--------------------------------------------------------------------
+## RESPONSIVE MOBILE PORTRAIT
+--------------------------------------------------------------------*/
+@media (max-width: 768px) and (orientation: portrait) {
+
+}
