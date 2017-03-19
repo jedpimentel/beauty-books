@@ -25,7 +25,7 @@ The logic to initialize the state for the current page and to define the behavio
 ## Services
 - UserService
 - AppointmentService
-- ExpenseService
+- ExpensesService
 
 ## Database Schema 
 ``` javascript
@@ -48,7 +48,7 @@ Appointment = {
   note: String
 }
 
-Expense = {
+Expenses = {
   primary_key: Integer,
   pro_id: Integer,
   expense_date: Date,
