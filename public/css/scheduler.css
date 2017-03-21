@@ -1,48 +1,61 @@
-.container.home{
+/* CSS styles for scheduler.html */
+.container.scheduler {
   margin: 15px auto;
-  background-color: blue;
 }
-.container.home .wmy-tabs a{
-  width: 33.33%;
-  float: left;
+.container.scheduler .calendar {
   background-color: #333;
-  font-size: 40px;
-  height: 50px;
+  height: 300px;
+  margin: 0 15px;
   text-align: center;
 }
-.container.home .arrows{
-  width: 8%;
-  background-color: gray;
-  font-size: 23px;
-  margin-left: 75px;
-  float: left;
-}
-.container.home .total{
-  text-align: center;
-}
-.container.home .total-sum{
-  width: 82%;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  float: left;
-}
-.container.home h3{
-  width: 80%;
-  background-color: gray;
-  border: 1px solid gray;
-  border-radius: 10px;
-}
-.container.home .deductions small{
-  text-align: center;
-  line-height: 1.5px;
-}
-.container.home .black-line{
+.container.scheduler h1 {
   background-color: #333;
   color: #fff;
   line-height: 1.5;
   text-align: center;
 }
+.container.scheduler ul {
+  list-style: none;
+  padding: 0;
+}
+.container.scheduler ul li {
 
+}
+.container.scheduler button {
+  background-color: inherit;
+  border: 1px solid #333;
+  border-radius: 0;
+  color: #333;
+  height: 90px;
+  margin: 0 15px;
+  min-width: 90px;
+  padding: 0;
+  text-align: center;
+}
+.container.scheduler .fa.fa-plus {
+  font-size: 45px;
+}
+.container.scheduler .appointment {
+  border: 1px solid #333;
+  border-radius: 4px;
+  margin: 0 15px;
+}
+.container.scheduler label {
+  background-color: #333;
+  color: #fff;
+  display: inline-block;
+  min-width: 15%;
+  padding: 5px 15px;
+  text-align: left;
+}
+.container.scheduler span {
+  display: inline-block;
+  padding: 5px 15px;
+  text-align: left;
+}
+/*--------------------------------------------------------------------
+# RESPONSIVE
+--------------------------------------------------------------------*/
 /*--------------------------------------------------------------------
 ## RESPONSIVE TABLET LANDSCAPE
 --------------------------------------------------------------------*/
