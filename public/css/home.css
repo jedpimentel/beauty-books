@@ -1,48 +1,84 @@
 .container.home{
   margin: 15px auto;
-  background-color: blue;
+  padding-top: 45px;
 }
 .container.home .wmy-tabs a{
   width: 33.33%;
-  float: left;
   background-color: #333;
   font-size: 40px;
-  height: 50px;
   text-align: center;
+  display: inline-block;
+  height: auto;
+  float: left;
+}
+.container.home .wmy-tabs button{
+  width: 100%;
+  text-align: center;
+  min-width: 100%;
+  height: 60px;
 }
 .container.home .arrows{
-  width: 8%;
-  background-color: gray;
   font-size: 23px;
   margin-left: 75px;
   float: left;
+  position: relative;
+  right: 25px;
+  top: 20px;
 }
 .container.home .total{
   text-align: center;
-}
-.container.home .total-sum{
-  width: 82%;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  position: relative;
+  height: 90px;
   float: left;
+  width: 263px;
+}
+.container.home .total h3{
+  width: 60%;
+  float: left;
+  position: relative;
+  left: 30px;
 }
 .container.home h3{
-  width: 80%;
   background-color: gray;
-  border: 1px solid gray;
-  border-radius: 10px;
+  border-radius: 25px;
+  display: inline-block;
+  height: 30px;
 }
-.container.home .deductions small{
+.container.home .graph{
+  border: 1px solid black;
   text-align: center;
-  line-height: 1.5px;
+  height: 210px;
+  width: 100%;
+  float: left;
+}
+.container.home .deductions{
+  text-align: center;
+}
+.container.home .deductions h3{
+  text-align: center;
+  margin-bottom: 0px;
+}
+.container.home .deductions p{
+  text-align: center;
 }
 .container.home .black-line{
   background-color: #333;
   color: #fff;
   line-height: 1.5;
+  width: 100%;
+  text-align: center;
+  border-radius: 0px;
+}
+.container.home .next-tax-payment{
   text-align: center;
 }
-
+.container.home .next-tax-payment h3{
+  text-align: center;
+  margin-bottom: 0px;
+}
+.container.home .next-tax-payment p{
+  text-align: center;
+}
 /*--------------------------------------------------------------------
 ## RESPONSIVE TABLET LANDSCAPE
 --------------------------------------------------------------------*/
