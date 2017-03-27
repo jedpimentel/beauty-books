@@ -1,0 +1,8 @@
+.container.settings .bar {
+  background-color: #333;
+  color: #fff;
+  height: 20px;
+}
+.container.transactions ul{
+  list-style-type: none;
+}
