@@ -9,7 +9,9 @@
 --------------------------------------------------------------------*/
 .container.settings .onoffswitch {
   position: relative; width: 2em;
-  -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select: none;
 }
 
 .container.settings .onoffswitch-checkbox {
@@ -18,18 +20,28 @@
 
 .container.settings .onoffswitch-label {
   background-color: #FFFFFF;
-  border: 2px solid #E3E3E3; border-radius: 1em;
-  display: block; overflow: hidden; cursor: pointer;
-  height: 1em; padding: 0; line-height: inherit;
+  border: 2px solid #E3E3E3;
+  border-radius: 1em;
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  height: 1em;
+  padding: 0;
+  line-height: inherit;
   transition: background-color 0.3s ease-in;
 }
 
 .container.settings .onoffswitch-label:before {
   background: #FFFFFF;
-  border: 2px solid #E3E3E3; border-radius: 1em;
+  border: 2px solid #E3E3E3;
+  border-radius: 1em;
   content: "";
-  display: block; width: 1em; margin: 0px;
-  position: absolute; top: 0; bottom: 0;
+  display: block;
+  width: 1em;
+  margin: 0px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
   right: .6111em;
   transition: all 0.3s ease-in 0s;
 }
@@ -59,18 +71,28 @@
 
 .container.settings .switch-label {
   background-color: #FFFFFF;
-  border: 2px solid #E3E3E3; border-radius: 1em;
-  display: block; overflow: hidden; cursor: pointer;
-  height: 1em; padding: 0; line-height: inherit;
+  border: 2px solid #E3E3E3;
+  border-radius: 1em;
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  height: 1em;
+  padding: 0;
+  line-height: inherit;
   transition: background-color 0.3s ease-in;
 }
 
 .container.settings .switch-label:before {
   background: #FFFFFF;
-  border: 2px solid #E3E3E3; border-radius: 1em;
+  border: 2px solid #E3E3E3;
+  border-radius: 1em;
   content: "";
-  display: block; width: 1em; margin: 0px;
-  position: absolute; top: 0; bottom: 0;
+  display: block;
+  width: 1em;
+  margin: 0px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
   right: .6111em;
   transition: all 0.3s ease-in 0s;
 }
