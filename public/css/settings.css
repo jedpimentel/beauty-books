@@ -8,7 +8,8 @@
 ## BUTTON SETTINGS BEGINS
 --------------------------------------------------------------------*/
 .container.settings .onoffswitch {
-  position: relative; width: 2em;
+  position: relative;
+  width: 2em;
   -webkit-user-select:none;
   -moz-user-select:none;
   -ms-user-select: none;
@@ -61,8 +62,11 @@
 ## SECOND BUTTON SETTINGS BEGINS
 --------------------------------------------------------------------*/
 .container.settings .switch {
-  position: relative; width: 2em;
-  -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+  position: relative;
+  width: 2em;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select: none;
 }
 
 .container.settings .switch-checkbox {
