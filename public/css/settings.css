@@ -1,0 +1,159 @@
+/* CSS styles for settings.html */
+.container.settings .bar {
+  background-color: #333;
+  color: #fff;
+  height: 20px;
+}
+/*--------------------------------------------------------------------
+## BUTTON SETTINGS BEGINS
+--------------------------------------------------------------------*/
+.container.settings .onoffswitch {
+  position: relative;
+  width: 2em;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select: none;
+}
+
+.container.settings .onoffswitch-checkbox {
+  display: none;
+}
+
+.container.settings .onoffswitch-label {
+  background-color: #FFFFFF;
+  border: 2px solid #E3E3E3;
+  border-radius: 1em;
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  height: 1em;
+  padding: 0;
+  line-height: inherit;
+  transition: background-color 0.3s ease-in;
+}
+
+.container.settings .onoffswitch-label:before {
+  background: #FFFFFF;
+  border: 2px solid #E3E3E3;
+  border-radius: 1em;
+  content: "";
+  display: block;
+  width: 1em;
+  margin: 0px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: .6111em;
+  transition: all 0.3s ease-in 0s;
+}
+
+.container.settings .onoffswitch-checkbox:checked + .onoffswitch-label {
+  background-color: #333;
+}
+
+.container.settings .onoffswitch-checkbox:checked + .onoffswitch-label, .onoffswitch-checkbox:checked + .onoffswitch-label:before {
+  border-color: #333;
+}
+
+.container.settings .onoffswitch-checkbox:checked + .onoffswitch-label:before {
+  right: 0px;
+}
+/*--------------------------------------------------------------------
+## SECOND BUTTON SETTINGS BEGINS
+--------------------------------------------------------------------*/
+.container.settings .switch {
+  position: relative;
+  width: 2em;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select: none;
+}
+
+.container.settings .switch-checkbox {
+  display: none;
+}
+
+.container.settings .switch-label {
+  background-color: #FFFFFF;
+  border: 2px solid #E3E3E3;
+  border-radius: 1em;
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  height: 1em;
+  padding: 0;
+  line-height: inherit;
+  transition: background-color 0.3s ease-in;
+}
+
+.container.settings .switch-label:before {
+  background: #FFFFFF;
+  border: 2px solid #E3E3E3;
+  border-radius: 1em;
+  content: "";
+  display: block;
+  width: 1em;
+  margin: 0px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: .6111em;
+  transition: all 0.3s ease-in 0s;
+}
+
+.container.settings .switch-checkbox:checked + .switch-label {
+  background-color: #333;
+}
+
+.container.settings .switch-checkbox:checked + .switch-label, .switch-checkbox:checked + .switch-label:before {
+  border-color: #333;
+}
+
+.container.settings .switch-checkbox:checked + .switch-label:before {
+  right: 0px;
+}
+/*--------------------------------------------------------------------
+## BUTTON SETTINGS ENDS
+--------------------------------------------------------------------*/
+.container.settings .right{
+  float: right;
+}
+
+.container.settings {
+  margin: 15px auto;
+}
+
+.container.settings ul {
+  list-style: none;
+  padding: 0;
+}
+.container.settings ul li {
+  clear: both;
+}
+/*--------------------------------------------------------------------
+# RESPONSIVE
+--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------
+## RESPONSIVE TABLET LANDSCAPE
+--------------------------------------------------------------------*/
+@media (max-width: 1024px) and (orientation: landscape) {
+
+}
+/*--------------------------------------------------------------------
+## RESPONSIVE TABLET PORTRAIT
+--------------------------------------------------------------------*/
+@media (max-width: 1024px) and (orientation: portrait) {
+
+}
+/*--------------------------------------------------------------------
+## RESPONSIVE MOBILE LANDSCAPE
+--------------------------------------------------------------------*/
+@media (max-width: 768px) and (orientation: landscape) {
+
+}
+/*--------------------------------------------------------------------
+## RESPONSIVE MOBILE PORTRAIT
+--------------------------------------------------------------------*/
+@media (max-width: 768px) and (orientation: portrait) {
+
+}
