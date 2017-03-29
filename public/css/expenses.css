@@ -1,4 +1,4 @@
-.container.expenses{
+.container.expenses {
   margin: 15px auto;
   margin-top: 15px;
   margin-right: auto;
@@ -6,44 +6,44 @@
   margin-left: auto;
   padding-top: 45px;
 }
-.container.expenses .expenses-h2{
+.container.expenses .expenses-h2 {
   background-color: gray;
   color: white;
   height: 81px;
 }
-.container.expenses h2{
+.container.expenses h2 {
   float: left;
   border-radius: 0px;
 }
-.container.expenses .annual{
+.container.expenses .annual {
   margin-right: 40px;
 }
-.container.expenses .buttons{
+.container.expenses .buttons {
   background-color: black;
   color: white;
   border-radius: 0px;
   height: 39px;
 }
-.container.expenses .spend{
+.container.expenses .spend {
   margin-right: 60px;
   float: left;
   background-color: black;
 }
-.container.expenses .deduction{
+.container.expenses .deduction {
   float: left;
   margin-bottom: 25px;
   background-color: black;
 }
-.container.expenses ol{
+.container.expenses ol {
   width: 80%;
 }
-.container.expenses ol ul{
+.container.expenses ol ul {
   text-decoration: none;
   padding: 0px;
   margin-bottom: 30px;
   line-height: 1.9;
 }
-.container.expenses span{
+.container.expenses span {
   background-color: gray;
   color: white;
   float: right;

@@ -8,6 +8,7 @@
     "createAppointment": createAppointment,
     "getAppointment": getAppointment,
     "updateAppointment": updateAppointment,
+        "getAppointmentById": getAppointmentById,
     "deleteAppointment": deleteAppointment
     };
     return api;
@@ -15,14 +16,18 @@
     function createAppointment(appointment){
         return $http.post('/api/appointment', appointment);
     }
-    function createAppointment(appointment){
+    function getAppointments(appointmentId){
         return $http.get('/api/appointment'+appointmentId);
     }
-    function createAppointment(appointmentId){
+    function getAppointmentById(appointmentId) {
+      return $http.get('/api/appointment'+appointmentId);
+    }
+    function updateAppointment(appointmentId, appointment){
         return $http.put('/api/appointment/'+appointmentId, appointment);
     }
-    function createAppointment(appointmentId){
+    function deleteAppointment(appointmentId){
         return $http.delete('/api/appointment', appointmentId);
     }
   }
-  })();
+
+})();

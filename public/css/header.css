@@ -1,5 +1,9 @@
-nav .cog{
+nav .cog {
   position: absolute;
   left: 30px;
-  top: 15px;
+  line-height: 60px;
+}
+
+nav .cog .fa-cog {
+  font-size: 1.5em;
 }
