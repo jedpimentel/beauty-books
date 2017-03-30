@@ -22,7 +22,7 @@
   <div ng-show="model.showModal">
     <ng-include src="'views/components/scheduler-form.html'"/>
   </div>
-  <button ng-click="model.toggleModal()">
+  <button ng-show="!model.showModal" ng-click="model.toggleModal()">
     <i class="fa fa-plus" aria-hidden="true"></i>
   </button>
 </div>
