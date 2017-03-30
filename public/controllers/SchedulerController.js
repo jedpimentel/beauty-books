@@ -9,10 +9,17 @@
      */
     function SchedulerController() {
         let vm = this;
+        vm.toggleModal=toggleModal;
+        vm.showModal = false;
 
         function init() {
-            console.log("Scheduler Controller loaded");
+            console.log("scheduler Controller loaded");
         }
         init();
+
+        function toggleModal(){
+          console.log("works");
+          vm.showModal=!vm.showModal
+        }
     }
 })();
