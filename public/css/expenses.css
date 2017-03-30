@@ -1,50 +1,61 @@
 .container.expenses {
-  margin: 15px auto;
-  margin-top: 15px;
-  margin-right: auto;
-  margin-bottom: 15px;
-  margin-left: auto;
-  padding-top: 45px;
+    
 }
 .container.expenses .expenses-h2 {
-  background-color: gray;
-  color: white;
-  height: 81px;
+    background-color: gray;
+    color: white;
+    height: 81px;
 }
 .container.expenses h2 {
-  float: left;
-  border-radius: 0px;
+    border-radius: 0px;
+    float: left;
 }
 .container.expenses .annual {
-  margin-right: 40px;
+    margin-right: 40px;
 }
 .container.expenses .buttons {
-  background-color: black;
-  color: white;
-  border-radius: 0px;
-  height: 39px;
+    background-color: black;
+    border-radius: 0px;
+    color: white;
+    height: 39px;
 }
 .container.expenses .spend {
-  margin-right: 60px;
-  float: left;
-  background-color: black;
+    background-color: black;
+    float: left;
+    margin-right: 60px;
 }
 .container.expenses .deduction {
-  float: left;
-  margin-bottom: 25px;
-  background-color: black;
+    float: left;
+    margin-bottom: 25px;
+    background-color: black;
 }
-.container.expenses ol {
-  width: 80%;
+.container.expenses ul {
+    list-style: none;
+    padding: 15px;
+}
+.container.expenses ul li {
+    align-items: center;
+    display: flex;
+    float: left;
+    justify-content: center;
+    vertical-align: middle;
+    width: 100%;
 }
 .container.expenses ol ul {
-  text-decoration: none;
-  padding: 0px;
-  margin-bottom: 30px;
-  line-height: 1.9;
+    line-height: 1.9;
+    padding: 0px;
+    margin-bottom: 30px;
+    text-decoration: none;
 }
 .container.expenses span {
-  background-color: gray;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    width: 50%;
+}
+.container.expenses span {
+    /*background-color: gray;
   color: white;
   float: right;
   width: 100px;
@@ -52,5 +63,5 @@
   border-radius: 30px;
   height: 50px;
   width: 200px;
-  font-size: 35px;
+  font-size: 35px;*/
 }

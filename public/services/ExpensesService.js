@@ -1,9 +1,9 @@
-(function(){
+(function() {
     angular
         .module("BeautyBooks")
         .service("ExpenseService", ExpenseServices);
 
-    function ExpenseServices($http){
+    function ExpenseServices($http) {
         var api = {
             "createexpense": createExpense,
             "getExpenses": getExpenses,
@@ -12,23 +12,23 @@
         };
         return api;
 
-        function createExpense(expense){
+        function createExpense(expense) {
             return $http.post('/api/expense', expense);
         }
 
         function getExpenses(expense) {
-            return $http.get('/api/expense' + expenseId);
-        }
-        
-        function getExpenseById() {
-            
+            return $http.get('/api/expense' + expense);
         }
 
-        function updateExpense(expenseId){
-            return $http.put('/api/expense/'+expenseId, expense);
+        function getExpenseById(expenseId) {
+            return $http.get('/api/expense/' + expenseId)
         }
 
-        function deleteExpense(expenseId){
+        function updateExpense(expenseId) {
+            return $http.put('/api/expense/' + expenseId, expense);
+        }
+
+        function deleteExpense(expenseId) {
             return $http.delete('/api/expense', expenseId);
         }
     }

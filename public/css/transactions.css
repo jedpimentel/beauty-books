@@ -1,0 +1,30 @@
+.transaction {
+    border-radius: 8px;
+    display: block;
+    float: left;
+    list-style: none;
+}
+.transaction:nth-of-type(odd) {
+    background-color: pink;
+}
+.transaction:nth-of-type(even) {
+    background-color: red;
+}
+.transaction li {
+    display: block;
+    float: left;
+    padding: 5px;
+    position: relative;
+    width: 100%;
+}
+.transaction li label {
+    display: inline-block;
+    float: left;
+    margin-right: 15px;
+    position: relative;
+}
+.transaction li p {
+    display: inline-block;
+    float: left;
+    margin: 0;
+}

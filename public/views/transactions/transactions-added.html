@@ -1,70 +1,29 @@
-<div class="container">
-    <a href="#/transactions">Transactions Added</a>
-    <a href="#/transactions/reviewed">Transactions Reviewed</a>
-    <ul>
-      <li>
-        <ul>
-          <li>
-            Title: <span>Sephora</span>
-          </li>
-          <li>
-            Date: <span>Nov 4, 2016</span>
-          </li>
-          <li>
-            Amount: <span>$112</span>
-          </li>
-          <li>
-            Receipt: <a href="#">Link to receipt</a>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <ul>
-          <li>
-            Title: <span>Sally's Beauty Supply</span>
-          </li>
-          <li>
-            Date: <span>Nov 28, 2016</span>
-          </li>
-          <li>
-            Amount: <span>$104.60</span>
-          </li>
-          <li>
-            Receipt: <a href="#">Link to receipt</a>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <ul>
-          <li>
-            Title: <span>Make-Up Forever</span>
-          </li>
-          <li>
-            Date: <span>Dec 6, 2016</span>
-          </li>
-          <li>
-            Amount: <span>$125.75</span>
-          </li>
-          <li>
-            Receipt: <a href="#">Link to receipt</a>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <ul>
-          <li>
-            Title: <span>MAC Cosmetics</span>
-          </li>
-          <li>
-            Date: <span>Dec 13, 2016</span>
-          </li>
-          <li>
-            Amount: <span>$69.99  </span>
-          </li>
-          <li>
-            Receipt: <a href="#">Link to receipt</a>
-          </li>
-        </ul>
-      </li>
+<div class="container transactions">
+    <nav class="nav-tabs half">
+        <a href="#/transactions">
+            <button>Transactions Added</button>
+        </a>
+        <a href="#/transactions/reviewed">
+            <button>Transactions Reviewed</button>
+        </a>
+    </nav>
+    <!-- <ul ng-repeat="transaction in model.transactions"> -->
+    <ul class="transaction">
+        <li>
+            <label for="">Title:</label>
+            <p>{transaction.title}</p>
+        </li>
+        <li>
+            <label for="">Date:</label>
+            <p>{transaction.dateCreated}</p>
+        </li>
+        <li>
+            <label for="">Amount:</label>
+            <p>{transaction.amount}</p>
+        </li>
+        <li>
+            <label for="">Receipt:</label>
+            <a href="#">{transaction.receiptLink}</a>
+        </li>
     </ul>
 </div>

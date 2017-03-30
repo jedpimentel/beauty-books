@@ -1,50 +1,36 @@
 <div class="container home">
-  <!---
-  <h1>YTD</h1>
-  <p>Within this container will go the ng-include
-  / ng-switch / ng-switch when code for the four different screens
-</p>
------->
-<div class="wmy-tabs">
-    <a href="#/home/week">
-        <button>
-            Week
-        </button>
-    </a>
-    <a href="#/home/month">
-        <button>
-            Month
-        </button>
-    </a>
-    <a href="#/home">
-        <button>
-            YTD
-        </button>
-      </a>
-  </div>
-  <div class="arrows">
-      <i class="fa fa-sort-asc" aria-hidden="true"></i>
-      <small id="ytd-arrowup">$9,572</small>
-      <br>
-      <i class="fa fa-sort-desc" aria-hidden="true"></i>
-      <small id="ytd-arrowdown">$5,371</small>
-  </div>
+    <nav class="nav-tabs third">
+        <a href="#/home/week">
+            <button>Week</button>
+        </a>
+        <a href="#/home/month">
+            <button>Month</button>
+        </a>
+        <a href="#/home">
+            <button>YTD</button>
+        </a>
+    </nav>
+    <div class="arrows">
+        <i class="fa fa-sort-asc" aria-hidden="true"></i>
+        <small id="ytd-arrowup">$9,572</small>
+        <br>
+        <i class="fa fa-sort-desc" aria-hidden="true"></i>
+        <small id="ytd-arrowdown">$5,371</small>
+    </div>
 
-  <div class="total">
-    <h3 class="total-sum">$2,831</h3>
-  </div>
+    <label class="total">$2,831</label>
 
-  <div class="graph">Graph Goes Here</div>
+    <div class="graph">Graph Goes Here</div>
 
-  <div class="deductions">
-    <h3 class="black-line">Deductions</h3>
-    <h3 class="money">$0</h3>
-    <p>0 Deductions</p>
-  </div>
+    <div class="deductions">
+        <h3 class="black-line">Deductions</h3>
+        <label class="total">$0</label>
+        <p>0 Deductions</p>
+    </div>
 
-  <div class="next-tax-payment">
-    <h3 class="black-line">Next Tax Payment</h3>
-    <h3 class="money">$692</h3>
-    <p>Due June 17, 2017</p>
-  </div>
+    <div class="next-tax-payment">
+        <h3 class="black-line">Next Tax Payment</h3>
+        <label class="total">$692</label>
+        <p>Due June 17, 2017</p>
+    </div>
 </div>

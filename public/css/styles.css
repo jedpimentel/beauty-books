@@ -3,6 +3,7 @@
 @import "scheduler.css";
 @import "settings.css";
 @import "home.css";
+@import "transactions.css";
 /*
 Author: Resilient Coders
 Author URI: http://www.resilientcoders.org/
@@ -21,7 +22,7 @@ License URI: LICENSE
 # COMPONENTS
 # HELPER
 # NAVIGATION
-    ## Tabs Navigation
+    ## FOOTER TABS
 # ACCESSIBILITY
 # RESPONSIVE
     ## RESPONSIVE TABLET LANDSCAPE
@@ -43,6 +44,16 @@ body {
     font-size: 16px;
 }
 button {
+    /*background-color: #333;*/
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto;
+    outline: 0;
+    padding: 10px 20px;
+}
+.login-btn {
     background-color: #333;
     border: none;
     border-radius: 4px;
@@ -50,7 +61,10 @@ button {
     cursor: pointer;
     display: block;
     height: 38px;
-    margin: 10px auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
     min-width: 240px;
     padding: 10px 20px;
 }
@@ -81,6 +95,15 @@ button:hover{
 .button:hover {
 
 }
+.nav-tabs a:active {
+
+}
+.nav-tabs a:focus {
+
+}
+.nav-tabs a:hover {
+
+}
 /*--------------------------------------------------------------------
 ## HEADER
 --------------------------------------------------------------------*/
@@ -91,6 +114,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 2;
 }
 header nav {
     height: inherit;
@@ -157,6 +181,7 @@ ul li, ol li {
     max-width: 540px;
     padding: 60px 0px;
     width: 100%;
+    margin: 0 auto;
 }
 section.container {
     height: 100vh;
@@ -210,11 +235,44 @@ section.container {
     flex-flow: column wrap;
     -webkit-flex-flow: column wrap;
 }
+.logo {
+    display: block;
+    float: left;
+    margin: 15px auto;
+    max-width: 200px;
+    position: relative;
+    width: 100%;
+}
 /*--------------------------------------------------------------------
 # NAVIGATION
 --------------------------------------------------------------------*/
+.nav-tabs {
+  height: 60px;
+  width: 100%;
+}
+.nav-tabs a {
+  background-color: #ccc;
+  display: inline-block;
+  font-size: 24px;
+  float: left;
+  height: auto;
+  text-align: center;
+}
+.nav-tabs.third a {
+    width: 33.33%;
+}
+.nav-tabs.half a {
+    width: 50%;
+}
+.nav-tabs button {
+  height: 60px;
+  min-width: 100%;
+  padding: 0px;
+  text-align: center;
+  width: 100%;
+}
 /*--------------------------------------------------------------------
-## TABS NAVIGATION
+## FOOTER TABS NAVIGATION
 --------------------------------------------------------------------*/
 footer {
     background-color: #333;
