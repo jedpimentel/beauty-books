@@ -26,11 +26,6 @@ passport.use(new FacebookStrategy({
     profileFields: ['id', 'emails', 'about', 'name', 'displayName']
   },
   function(accessToken, refreshToken, profile, cb) {
-    // In this example, the user's Facebook profile is supplied as the user
-    // record.  In a production-quality application, the Facebook profile should
-    // be associated with a user record in the application's database, which
-    // allows for account linking and authentication with other identity
-    // providers.
     console.log("In fb passport strategy callback");
     //console.log(profile);
     return createOnAuth(accessToken, refreshToken, profile, cb, "Facebook");
@@ -201,6 +196,7 @@ app.put('/api/appointment/:id',
       }
     });
   });
+// todo: handle image file upload here as well
 app.put('/api/expense/:id',
   require('connect-ensure-login').ensureLoggedIn('/noauth-json'),
   function(req, res) {
