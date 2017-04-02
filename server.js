@@ -263,6 +263,24 @@ app.delete('/api/expense/:id',
   });
 
 // READ (GET) services
+app.get('/api/appointment',
+  require('connect-ensure-login').ensureLoggedIn('/noauth-json'),
+  function(req, res) {
+    var db = mysql.createConnection(conf.DB_OPTIONS);
+    db.query("SELECT * FROM appt WHERE pro_id = ?", [req.user.pro_id], function(err, rows) {
+      if(err) {
+        console.log(err);
+        res.send(conf.defaultFailResponse);
+      } else {
+        var ret = [];
+        for(var i in rows) {
+          var appt = rows[i];
+          ret.push({ id: appt.appt_id, pro_id: req.user.pro_id, appt_date: appt.appt_date, amount: appt.amount, note: appt.note });
+        }
+        res.send({ records: ret });
+      } 
+    });
+  });
 app.get('/api/appointment/:id',
   require('connect-ensure-login').ensureLoggedIn('/noauth-json'),
   function(req, res) {
@@ -276,6 +294,24 @@ app.get('/api/appointment/:id',
         res.send({ id: appt.appt_id, pro_id: req.user.pro_id, appt_date: appt.appt_date, amount: appt.amount, note: appt.note });
       } else {
         res.send({ error: "Appointment not found", status: -1 }); // 404?
+      }
+    });
+  });
+app.get('/api/expense',
+  require('connect-ensure-login').ensureLoggedIn('/noauth-json'),
+  function(req, res) {
+    var db = mysql.createConnection(conf.DB_OPTIONS);
+    db.query("SELECT * FROM expense WHERE pro_id = ?", [req.user.pro_id], function(err, rows) {
+      if(err) {
+        console.log(err);
+        res.send(conf.defaultFailResponse);
+      } else {
+        var ret = [];
+        for(var i in rows) {
+          exp = rows[0];
+          ret.push({ id: exp.expense_id, pro_id: req.user.pro_id, expense_date: exp.expense_date, amount: exp.amount, note: exp.note });
+        }
+        res.send({ records: ret });
       }
     });
   });
