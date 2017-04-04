@@ -1,7 +1,7 @@
 {
-  "name": "simple-angular-starter",
+  "name": "Beauty-Books",
   "version": "1.0.0",
-  "description": "Simple Angular Starter for developers getting started building Single Page Applications in AngularJS",
+  "description": "Single Page Web App for Beauty Books",
   "main": "server.js",
   "directories": {
     "test": "test"
@@ -18,9 +18,26 @@
     "angular-loader": "^1.6.2",
     "angular-route": "^1.6.2",
     "body-parser": "^1.16.1",
+    "collections": "^5.0.0",
+    "connect-ensure-login": "^0.1.1",
+    "cookie-parser": "^1.4.3",
     "express": "^4.14.1",
+    "express-generator": "^4.14.0",
+    "express-request": "^0.3.0",
+    "express-session": "^1.13.0",
+    "html-entities": "^1.2.0",
+    "http": "^0.0.0",
+    "localstorage-memory": "^1.0.2",
+    "moment": "^2.18.1",
     "mongoose": "^4.8.4",
+    "multer": "^1.2.1",
+    "mysql": "^2.12.0",
     "nodemon": "^1.11.0",
-    "requirejs": "^2.3.3"
+    "passport": "^0.3.2",
+    "passport-facebook": "^2.1.1",
+    "passport-google-oauth": "^1.0.0",
+    "querystring": "^0.2.0",
+    "requirejs": "^2.3.3",
+    "striptags": "^3.0.1"
   }
 }
