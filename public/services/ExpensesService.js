@@ -5,8 +5,9 @@
 
     function ExpenseServices($http) {
         var api = {
-            "createexpense": createExpense,
+            "createExpense": createExpense,
             "getExpenses": getExpenses,
+            "getExpenseById": getExpenseById,
             "updateExpense": updateExpense,
             "deleteExpense": deleteExpense
         };

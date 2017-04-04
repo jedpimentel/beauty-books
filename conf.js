@@ -1,7 +1,7 @@
-exports.port = 3000;
+exports.port = 3001;
 exports.defaultFailResponse = { error: "An unexpected error occurred", status: -2 };
 exports.DB_OPTIONS = {
-  host: ""
+  host: "",
   database: "",
   user: "",
   password: "",

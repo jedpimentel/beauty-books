@@ -16,8 +16,11 @@
      * Configures the routes for the Single Page Application connecting controllers to views
      * @param $routeProvider
      */
-    function Configuration($routeProvider) {
-        // Define your routes here. Each "view" will have a route path
+    function Configuration($routeProvider, $locationProvider, $httpProvider) {
+      $httpProvider.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
+      $httpProvider.defaults.headers.put['Content-Type'] = 'application/json;charset=utf-8';
+
+      // Define your routes here. Each "view" will have a route path
         // associated with it. Also, you will include a Controller for
         // each view to manipulate binded data
         $routeProvider
@@ -84,7 +87,7 @@
                 controller: "ExpensesQuarterlyController",
                 controllerAs: "model"
             })
-            .when("/expenses/annual", {
+            .when("/expense", {
                 templateUrl: "views/expenses/expenses-annual-spending.html",
                 controller: "ExpensesAnnualController",
                 controllerAs: "model"
