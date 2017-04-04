@@ -1,6 +1,7 @@
 /* CSS styles for scheduler.html */
 .container.scheduler {
   margin: 15px auto;
+  position: relative;
 }
 .container.scheduler .calendar {
   background-color: #333;
@@ -54,6 +55,7 @@
   text-align: left;
 }
 .container.scheduler .scheduler-form {
+  background-color: #fff;
   display: block;
   float: left;
   margin-bottom: 50px;
